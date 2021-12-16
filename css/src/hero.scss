@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 200px 0;
-    background-image: url("../images/hero-image.jpg");
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center center;
 
@@ -22,42 +22,5 @@
 
     .container {
         position: relative;
-    }
-
-    // .form-box {
-    //     max-width: 500px;
-    //     width: 100%;
-    //     background-color: #fff;
-    //     border-radius: 20px;
-    //     padding: 20px;
-
-    //     .form-row {
-    //         display: flex;
-    //     }
-
-    //     .radio-input-wrap {
-    //         input {
-    //             display: none;
-    //         }
-
-    //         input:checked ~ label:before {
-    //             background: red;
-    //         }
-
-    //         label {
-    //             text-transform: uppercase;
-    //             cursor: pointer;
-
-    //             &:before {
-    //                 content: '';
-    //                 display: inline-block;
-    //                 width: 13px;
-    //                 height: 13px;
-    //                 border-radius: 50%;
-    //                 border: 1px solid #41D395;
-    //                 transition: 0.3s ease-in-out;
-                }
-            }
-        }
     }
 }

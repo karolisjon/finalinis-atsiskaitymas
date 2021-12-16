@@ -21,6 +21,7 @@ header {
                 li {
                     color: #fff;
                     opacity: 0.6;
+                    transition: 0.3s;
 
                     &:not(:last-child) {
                         margin-right: 45px;
@@ -30,3 +31,4 @@ header {
         }
     }
 }
+

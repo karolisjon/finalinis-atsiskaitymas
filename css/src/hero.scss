@@ -41,15 +41,25 @@
         color: white;
         font-size: 36px;
         font-weight: bold;
-        margin-bottom: 70px;
+        margin-bottom: 21px;
+        width: 426px;
     }
+
+    hr {
+        margin-bottom: 21px;
+        height: 2px;
+        background-color: white;
+        border-width: 0;
+        width: 84px;
+    }
+
     p {
         color: white;
         font-size: 16px;
         font-weight: bold;
-        margin-bottom: 24px;
+        margin-bottom: 21px;
     }
-    button {
+    #hero-download {
         width: 135px;
         height: 42px;
         background-color: transparent;
@@ -58,7 +68,7 @@
         font-size: 14px;
         font-weight: bold;
         padding: 12px;
-        transition: 0.35s ease-in-out;
+        transition: 0.25s ease-in-out;
 
         &:hover {
             cursor: pointer;
@@ -67,6 +77,72 @@
             color: #e27866;
         }
     }
+}
+
+.hero {
+
+    .hero-form {
+        z-index: 1;
+        max-width: 360px;
+        height: 425px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        position: relative;
+        
+
+        .form-header {
+            border-radius: 5px;
+            height: 57px;
+            background-color: #F5F5F5;
+            display: flex;
+            align-items: end;
+            top: 18px;
+            bottom: 18px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font-size: 20px;
+            display: inline;
+            color: #333333;
+            font-weight: bold;
+        }
+    } 
+}
+
+.form-container {
+    display: grid;
+    z-index: 1;
+    max-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 
 
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+#form-button {
+    width: 100%;
+    height: 57px;
+    background-color: #41D395;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-checkboxes {
+    display: inline-block;
+    margin-bottom: 32px;
 }

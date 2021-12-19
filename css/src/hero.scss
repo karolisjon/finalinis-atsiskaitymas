@@ -21,7 +21,38 @@
         opacity: 0.63;
     }
 
-    .container {
-        position: relative;
+}
+
+#logo-hero {
+    z-index: 1;
+    width: 247px;
+    height: 108px;
+}
+
+.hero {
+
+    .hero-left {
+        z-index: 1;
+        width: 645px;
+    }
+
+    h3 {
+        color: white;
+        font-size: 36px;
+        font-weight: 800;
+    }
+    p {
+        color: white;
+        font-size: 16px;
+    }
+    button {
+        width: 135px;
+        height: 42px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px;
     }
 }

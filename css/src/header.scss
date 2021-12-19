@@ -19,9 +19,17 @@ header {
                 padding: 0;
 
                 li {
-                    color: #fff;
+                    color: #F5F5F5;
                     opacity: 0.6;
-                    transition: 0.3s;
+                    transition: 0.25s;
+                    font-size: 14px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #FFFFFF;
+                        font-weight: 600;
+                        
+                    }
 
                     &:not(:last-child) {
                         margin-right: 45px;

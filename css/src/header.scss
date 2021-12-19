@@ -13,6 +13,12 @@ header {
         padding-top: 10px;
         padding-bottom: 10px;
 
+        img {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         nav {
             ul {
                 list-style: none;

@@ -2,8 +2,7 @@
     position: relative;
     padding: 115px 0;
     height: 100vh;
-    background-color: pink;
-    background-image: url("");
+    background-image: url("/images/about.png");
     background-size: cover;
     background-position: center center;
     
@@ -47,7 +46,7 @@
                 }
 
                 &.active {
-                    background-color: orange;
+                    background-color: #E27866;
                 }    
                 
                 
@@ -59,6 +58,7 @@
 
     .tab-content {
         display: none;
+        transform: tab-appears 0.5s;
 
         &.active {
             display: block;

@@ -14,3 +14,15 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 }
+
+@keyframes tab-appears {
+    0% {
+        opacity: 0;
+        tansform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY();
+    }
+}

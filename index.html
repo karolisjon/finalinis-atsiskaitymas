@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;300&display=swap"
         rel="stylesheet">
+
     <title>Finalinis atsiskaitymas</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,44 +33,44 @@
     <main>
         <section class="hero">
             <div class="hero-container">
-            <div class="hero-left">
-                <img id="logo-hero" src="images/Group 85.svg" alt="Logo">
-                <h3>Explained propriety<br> of out perpetual to you</h3>
-                <hr>
-                <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.
-                    Proceed how any engaged visitor. Explained propriety of out perpetual his you.
-                    Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
-                <button type="button" id="hero-download">DOWNLOAD</button>
-            </div>
-            <form class="hero-form">
-                <div class="form-header">
-                    <p>Try Your <span style="color: #e27866;;">FREE</span> Trial Today</p>
+                <div class="hero-left">
+                    <img id="logo-hero" src="images/Group 85.svg" alt="Logo">
+                    <h3>Explained propriety<br> of out perpetual to you</h3>
+                    <hr>
+                    <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                        Proceed how any engaged visitor. Explained propriety of out perpetual his you.
+                        Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+                    <button type="button" id="hero-download">DOWNLOAD</button>
                 </div>
-                <div class="form-container">
-                    <p>Your details</p>
-                    <input type="text" placeholder="First name">
-                    <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
-                    <input type="text" placeholder="Last name">
-                    <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
-                    <input type="text" placeholder="Phone number">
-                    <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
-                    <p>Type of subscription</p>
+                <form class="hero-form">
+                    <div class="form-header">
+                        <p>Try Your <span style="color: #e27866;;">FREE</span> Trial Today</p>
+                    </div>
+                    <div class="form-container">
+                        <p>Your details</p>
+                        <input type="text" placeholder="First name">
+                        <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
+                        <input type="text" placeholder="Last name">
+                        <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
+                        <input type="text" placeholder="Phone number">
+                        <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
+                        <p>Type of subscription</p>
                         <div class="form-checkboxes">
                             <div class="radio-wrap">
-                            <label class="radio-container">
-                                <input type="radio" name="radios" class="input">
-                                <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">MONTHLY</span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="radios" class="input">
-                                <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">YEARLY</span>
-                            </label>
-                        </div>
+                                <label class="radio-container">
+                                    <input type="radio" name="radios" class="input">
+                                    <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">MONTHLY</span>
+                                </label>
+                                <label class="radio-container">
+                                    <input type="radio" name="radios" class="input">
+                                    <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">YEARLY</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                      <button id="form-button">GET STARTED</button>
-            </form>
-        </div>
+                    <button id="form-button">GET STARTED</button>
+                </form>
+            </div>
         </section>
 
         <section class="social-media"></section>
@@ -77,23 +80,121 @@
                 <nav class="tab-navigation">
                     <ul>
                         <li class="active" data-target="register">
-                           <span>Register</span>     
+                            <span>Register</span>
                         </li>
                         <li data-target="apply">
-                            <span>Apply</span>  
+                            <span>Apply</span>
                         </li>
                         <li data-target="receive">
-                            <span>Receive</span>  
+                            <span>Receive</span>
                         </li>
                     </ul>
                 </nav>
-                    <div class="tab-content active">Register content</div>
-                    <div class="tab-content">Apply content</div>
-                    <div class="tab-content">Receive content</div>
+                <div data-tab="register" class="tab-content active">Register content</div>
+                <div data-tab="apply" class="tab-content">Apply content</div>
+                <div data-tab="receive" class="tab-content">Receive content</div>
+                <!-- <div data-tab="subscribe" class="tab-content"></div> -->
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2> What our customers are saying?</h2>
+
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi, neque
+                                        dolore corrupti quasi assumenda totam possimus consequuntur expedita
+                                        perspiciatis quam similique nobis nam impedit molestiae rem dolorum hic
+                                        repudiandae!</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
+
             </div>
         </section>
 
     </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

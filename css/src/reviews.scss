@@ -1,0 +1,36 @@
+.reviews {
+    padding: 200px;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .swiper {
+        width: 600px;
+        height: 300px;
+        
+      }
+}
+
+.single-review {
+    .text {
+        background-color: blue;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        // line-height: 16px;
+        color: #fff;
+    }
+
+    // .info {
+
+    // }
+}
+
+
+

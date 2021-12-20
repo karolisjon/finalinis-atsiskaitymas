@@ -3,25 +3,23 @@
 // About section - tab navigation
 
 const tabNavigationElements = document.querySelectorAll(".about .tab-navigation li");
-const tabContentEls = document.querySelectorAll(".about .tab-content");
+const tabContentElements = document.querySelectorAll(".about .tab-content");
 
-function removeActiveClass(elements) {
-    for (let tab of tabNavigationElements) {
-        tab.classList.remove("active");
+function removeActiveClassesFromElements(elements) {
+    for (let element of elements) {
+        element.classList.remove("active");
     }
 }
 
-for (let tabEl of tabNavigationElements) {
-    tabEl.addEventListener("click", function() {
+for (let tabElement of tabNavigationElements) {
+    tabElement.addEventListener("click", function() {
+        const target = this.dataset.target; // "register" / "apply" / "receive"
 
-        const target = this.dataset.target;
-
-        removeActiveClass(tabNavigationElements);
+        removeActiveClassesFromElements(tabNavigationElements);
         this.classList.add("active");
 
-        removeActiveClass(tabContentEls);
-        document.querySelector('.tab-content [data-tab="'+target+'"]').classList.add("active");
-
+        removeActiveClassesFromElements(tabContentElements);
+        document.querySelector('.tab-content[data-tab="'+target+'"]').classList.add('active');
     });
 }
 
@@ -39,6 +37,14 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 2000,
     },
+    
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
     breakpoints: {
 
         800: {
@@ -46,12 +52,35 @@ const swiper = new Swiper('.swiper', {
           spaceBetween: 120
         }
       },
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      
-    },
+
+
   });
+
+  // API key - d613cc8e8f836175ed469d84c274770d 
+
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=d613cc8e8f836175ed469d84c274770d";
+  const weatherElement = document.getElementById('weather');
+
+  function getCurrentWeather() {
+      const http = new XMLHttpRequest();
+      http.open("GET", url);
+      http.addEventListener("load", function() {
+          const response = JSON.parse(http.response);
+          const temperature = response.main.temp;
+
+          console.log(temperature);
+
+
+          if (temperature > 0) {
+              weatherElement.innerText = "+" + temperature;
+                      
+            } else {
+                weatherElement.innerText = temperature;
+            }
+
+      })
+      http.send();
+  }
+
+  window.addEventListener("load", getCurrentWeather)
 

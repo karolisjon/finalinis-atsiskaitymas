@@ -42,7 +42,7 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
+      clickable: true
     },
 
     breakpoints: {
@@ -52,8 +52,6 @@ const swiper = new Swiper('.swiper', {
           spaceBetween: 120
         }
       },
-
-
   });
 
   // API key - d613cc8e8f836175ed469d84c274770d 

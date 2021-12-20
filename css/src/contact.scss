@@ -1,6 +1,13 @@
 .contact {
-    padding: 300px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding: 300px 0;
+    background: rebeccapurple;
+
+    h2 {
+        display: flex;
+        color: #fff;
+        font-size: 100px;
+    }
 }

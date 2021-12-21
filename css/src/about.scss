@@ -156,7 +156,6 @@
         
 
         &.active {
-            // display: block;
             display: flex;
             flex-wrap: wrap;
             display: contents;
@@ -165,29 +164,20 @@
 
         .about-images {
             width: 362px;
-            // display: flex;
-            // flex-wrap: wrap;
             
-        
             .top-images {
                 display: flex;
                 justify-content: space-between;
-            }
+            
         
             #about-img-1 {
-                // width: 168px;
-                // height: 168px;
-                // margin-right: 26px;
                 
-        
                 &:hover {
                     cursor: pointer;
                 }
             }
         
             #about-img-2 {
-                // width: 168px;
-                // height: 168px;
         
                 &:hover {
                     cursor: pointer;
@@ -195,73 +185,18 @@
             }
         
             #about-img-3 {
-                // width: 362px;
-                // height: 177px;
-        
+
                 &:hover {
                     cursor: pointer;
                 }
+
+            #about-img-4 {
+                height: 168px;
+                width: 168px;
+            }    
             } 
         }
-
-
     }
 }
 
-// .about-images {
-//     width: 362px;
-//     // display: flex;
-//     // flex-wrap: wrap;
-    
-
-//     .top-images {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-
-//     #about-img-1 {
-//         // width: 168px;
-//         // height: 168px;
-//         // margin-right: 26px;
-        
-
-//         &:hover {
-//             cursor: pointer;
-//         }
-//     }
-
-//     #about-img-2 {
-//         // width: 168px;
-//         // height: 168px;
-
-//         &:hover {
-//             cursor: pointer;
-//         }
-//     }
-
-//     #about-img-3 {
-//         // width: 362px;
-//         // height: 177px;
-
-//         &:hover {
-//             cursor: pointer;
-//         }
-//     } 
-// }
-
-
-
-
-
-
-
-
-
-// .about {
-
-//     .container {
-//         display: flex;
-//         align-items: center;
-//         flex-wrap: wrap;
-//     }
-// }
+}

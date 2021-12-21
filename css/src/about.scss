@@ -135,6 +135,11 @@
         animation: tab-reveal 0.5s forwards;
         width: 509px;
         
+        .about-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 79px;
+    }
 
         h2 {
             color: #FFFFFF;
@@ -151,51 +156,106 @@
         
 
         &.active {
-            display: block;
+            // display: block;
+            display: flex;
+            flex-wrap: wrap;
+            display: contents;
             
         }
+
+        .about-images {
+            width: 362px;
+            // display: flex;
+            // flex-wrap: wrap;
+            
+        
+            .top-images {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            #about-img-1 {
+                // width: 168px;
+                // height: 168px;
+                // margin-right: 26px;
+                
+        
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        
+            #about-img-2 {
+                // width: 168px;
+                // height: 168px;
+        
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        
+            #about-img-3 {
+                // width: 362px;
+                // height: 177px;
+        
+                &:hover {
+                    cursor: pointer;
+                }
+            } 
+        }
+
+
     }
 }
 
-.about-images {
-    width: 362px;
-    display: flex;
-    flex-wrap: wrap;
+// .about-images {
+//     width: 362px;
+//     // display: flex;
+//     // flex-wrap: wrap;
     
 
-    .top-images {
-        display: flex;
-    }
+//     .top-images {
+//         display: flex;
+//         justify-content: space-between;
+//     }
 
-    #about-img-1 {
-        // width: 168px;
-        // height: 168px;
-        // margin-right: 26px;
+//     #about-img-1 {
+//         // width: 168px;
+//         // height: 168px;
+//         // margin-right: 26px;
         
 
-        &:hover {
-            cursor: pointer;
-        }
-    }
+//         &:hover {
+//             cursor: pointer;
+//         }
+//     }
 
-    #about-img-2 {
-        // width: 168px;
-        // height: 168px;
+//     #about-img-2 {
+//         // width: 168px;
+//         // height: 168px;
 
-        &:hover {
-            cursor: pointer;
-        }
-    }
+//         &:hover {
+//             cursor: pointer;
+//         }
+//     }
 
-    #about-img-3 {
-        // width: 362px;
-        // height: 177px;
+//     #about-img-3 {
+//         // width: 362px;
+//         // height: 177px;
 
-        &:hover {
-            cursor: pointer;
-        }
-    } 
-}
+//         &:hover {
+//             cursor: pointer;
+//         }
+//     } 
+// }
+
+
+
+
+
+
+
+
 
 // .about {
 

@@ -1,56 +1,98 @@
-.black {
+.black-section {
     background-color: #1C1C1C;
     height: 596px;
-    // display: flex;
-    // align-items: center; 
-    // justify-content: center;
+    
 
-    // .black-image-container {
-    //     display: flex;
-    // align-items: center; 
-    // justify-content: center;
-    // }
+    .black-image {
+        display: flex;
+        
+        
 
-    img {
+        img {
         width: 388px;
         height: 169px;
-    }
-
-    .black-content {
-
-        .black-content-top {
-
-            h3 {
-                color: #fff;
-                font-size: 30px;
-                font-weight: bold;
-            }
-
-            hr {
-                width: 200px;
-                height: 2px;
-                border-width: 0;
-                background-color: #E27866;
-            }
-
-            p {
-                color: #fff;
-                font-size: 14px;
-            }
+        flex-direction: column;
+        align-self: center;
+        margin-right: 168px;
         }
     }
 
-    .black-content-bottom {
-        h4 {
+
+
+
+
+    .black-content-parent {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
             color: #fff;
-            font-size: 14px;
+            font-size: 30px;
             font-weight: bold;
+            margin-top: 90px;
+            width: 314px;
+        }
+        
+        hr {
+            width: 200px;
+            height: 2px;
+            border-width: 0;
+            background-color: #E27866;
+            margin-bottom: 27px;
+            margin-top: 27px;
         }
 
         p {
             color: #fff;
             font-size: 14px;
+            margin-bottom: 43px;
+        }
+        h4 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 27px;
+        }
+
+        .black-title {
+            display: flex;
+            flex-direction: column;
+
+            .black-title-content {    
+                display: flex;
+                
+
+                .black-title-content-svg {
+                    margin-right: 20px;
+
+                    svg {
+                        display: inline;
+                    }
+                }
+
+
+                .black-title-content-text {
+                    width: 394px;
+                    
+
+                    p {
+                        margin-bottom: 36px;
+
+                        &:nth-child(1) {
+                            margin-bottom: 89px;
+                        }
+                    }
+
+                    h4 {
+                        margin-bottom: 6px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    
+                }
+            }
         }
     }
-
 }
+

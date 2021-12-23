@@ -1,13 +1,109 @@
 .contact {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 300px 0;
-    background: rebeccapurple;
+    // height: 573px;
+    background: #E27866;
 
-    h2 {
-        display: flex;
-        color: #fff;
-        font-size: 100px;
+    .contact-top {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+
+        .temperature {
+            font-size: 18px;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 36px;
+            color: #FFFFFF;
+            margin-top: 70px;
+            margin-bottom: 23px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #FFFFFF;
+            margin-bottom: 21px;
+        }
     }
+}
+
+
+.hero-form {
+    z-index: 1;
+    max-width: 390px;
+    height: 314px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 50px;
+    
+    
+
+    .form-header {
+        border-radius: 5px;
+        height: 57px;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: end;
+        top: 18px;
+        bottom: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 28px;
+    }
+
+    p {
+        font-size: 20px;
+        display: inline;
+        color: #333333;
+        font-weight: bold;
+
+    }
+    .form-checkboxes {
+        display: inline-block;
+        margin-bottom: 32px;
+        margin-bottom: 41px;
+            margin-top: 26px;
+    }
+    
+    ::placeholder {
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        color: #D8D8D8;
+    }
+    
+    input[type="text" i]  {
+        border: none;  
+        // margin-top: 30px;
+        border-bottom: 1px solid #D8D8D8;
+        margin-bottom: 20px;   
+        outline: none;
+        // padding-top: 33px;
+
+        &:nth-child(1) {
+            padding-top: 33px;
+        }
+
+    }
+
+    .button { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    #form-button {
+        width: 158px;
+        height: 48px;
+        border-radius: 5px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+} 
 }

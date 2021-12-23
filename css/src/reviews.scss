@@ -57,14 +57,15 @@
                 border-radius: 8px;
                 padding: 20px;
 
+                &::after {
+                    content: '';
+                    bottom: 0; 
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 15px solid red;
+                } 
 
-                // width: 0; 
-                // height: 0; 
-                // border-left: 20px solid transparent;
-                // border-right: 20px solid transparent;
-                // border-top: 20px solid #6696E2;
 
-            
             p {
                 font-size: 16px;
                 line-height: 1.375;

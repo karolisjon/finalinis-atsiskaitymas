@@ -1,6 +1,7 @@
 .pricing-section {
     background-color: #6696E2;
     padding-bottom: 108px;
+    
 
     .pricing-top {
         display: flex;
@@ -31,10 +32,22 @@
         }
     }
 
+
+    .price-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
     .price-options {
         width: 343px;
+        transition: 0.3s ease-in-out;
         
-        
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            box-shadow: 10px 10px 15px #00000029;
+        }
 
         .price-basic {
             
@@ -71,8 +84,18 @@
             }        
             }
             .price-popularity {
-                height: 6px;
+                min-height: 6px;
                 background-color: #41D395;
+
+                p {
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: #FFFFFF;
+                    font-size: 14px;
+
+                }
             }
 
             .price-description {

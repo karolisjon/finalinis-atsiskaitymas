@@ -137,19 +137,28 @@
             display: inline-block;
         
         .radio-wrap {
+            display: flex;
+            font-size: 10px;
+
+            .radio-input-wrap {
+                margin-right: 17px;
+            }
 
             input {
                 display: none;
+                margin-right: 5px;
+                
             }
-        
+
             input:checked ~ label:before {
-                background: #41D395;;
+                background: #41D395;
             }
-        
+
             label {
                 text-transform: uppercase;
                 cursor: pointer;
-        
+                margin-right: 5px;
+
                 &:before {
                     content: '';
                     display: inline-block;
@@ -158,10 +167,13 @@
                     border-radius: 50%;
                     border: 1px solid #41D395;
                     transition: 0.3s ease-in-out;
+                    margin-right: 5px;
                 }
+
             }
         }
     }
+
 
         #form-button {
             width: 100%;

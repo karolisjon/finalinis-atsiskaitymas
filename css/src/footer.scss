@@ -1,3 +1,38 @@
-footer {
-    background: pink;
+.footer {
+    background: #1C1C1C;
+
+    
+    .footer-container {
+        max-width: 1126px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 52px;
+        padding-bottom: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .social-media-icons {
+            display: contents;
+    
+            img {
+                transition: 0.3s ease-in-out;
+    
+                &:hover {
+                    cursor: pointer;
+                    transform: translateY(-3px);
+                }
+            }
+        }  
+
+        .footer-copyright {
+
+            p {
+                font-size: 18px;
+                color: #FFFFFF;
+                opacity: 50%;
+            }
+        }
+    }
+    
 }

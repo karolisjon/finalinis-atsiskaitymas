@@ -83,3 +83,5 @@ const swiper = new Swiper('.swiper', {
 
   window.addEventListener("load", getCurrentWeather)
 
+
+

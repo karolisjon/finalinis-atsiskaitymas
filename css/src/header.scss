@@ -26,22 +26,22 @@ header {
                 padding: 0;
 
                 li {
-                    color: #F5F5F5;
-                    opacity: 0.6;
-                    transition: 0.3s ease-in-out;
-                    font-size: 14px;
-                    
 
-                    &:hover {
-                        cursor: pointer;
-                        color: #FFFFFF;
-                        font-weight: bold;
-                        
+                        &:not(:last-child) {
+                            margin-right: 45px;
+                        }
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        opacity: 0.6;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
 
-                    &:not(:last-child) {
-                        margin-right: 45px;
-                    }
                 }
             }
         }

@@ -33,6 +33,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerGroup: 3,
     autoHeight: true,
     spaceBetween: 120,
+    grabCursor: true,
     speed: 900,
     // autoplay: {
     //     delay: 2000,

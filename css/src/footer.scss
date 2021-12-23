@@ -12,16 +12,41 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .social-media-icons {
+        .footer-social-media-icons {
             display: contents;
     
             img {
                 transition: 0.3s ease-in-out;
-    
+
                 &:hover {
                     cursor: pointer;
                     transform: translateY(-3px);
                 }
+            }
+
+            #facebook {
+                width: 10px;
+                height: 20px;
+            }
+
+            #instagram {
+                height: 20px;
+                width: 20px;
+            }
+
+            #twitter {
+                height: 20px;
+                width: 24px;
+            }
+
+            #pinterest {
+                width: 16px;
+                height: 20px;
+            }
+
+            #wifi {
+                height: 20px;
+                width: 20px;
             }
         }  
 

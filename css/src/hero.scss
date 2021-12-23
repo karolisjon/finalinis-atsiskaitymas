@@ -35,6 +35,7 @@
     .hero-left {
         z-index: 1;
         width: 645px;
+        margin-right: 91px;
     }
 
     h3 {
@@ -81,6 +82,7 @@
 
 .hero {
     height: 639px;
+
     .hero-form {
         z-index: 1;
         max-width: 360px;
@@ -166,7 +168,7 @@
     border: 1px solid #e27866;
     background-color: #1c1c1c;
     color: #e27866;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px;
     }
 }
 

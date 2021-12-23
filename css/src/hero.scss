@@ -162,17 +162,11 @@
     transition: 0.3s linear;
 
     &:hover {
-    // cursor: pointer;
-    // color: #41d395;
-    // background-color: #fff;
-    // border: 3px solid #41d395;
-    // border-radius: 5px;
-
     cursor: pointer;
     border: 1px solid #e27866;
     background-color: #1c1c1c;
     color: #e27866;
-    border-radius: 0;
+    border-radius: 0 0 5px 5px;
     }
 }
 
@@ -187,54 +181,6 @@
     padding-right: 10px;
 }
 
-// reikia pabaigti daryti checkboxus. Turi leisti pasirinkti tik viena + atitinkamai dizainas
-
-// input[type="radio"] {
-//     vertical-align: middle;
-//     display: none;
-
-//     &:hover {
-//         cursor: pointer;
-//     }
-// }
-
-// .radio-container {
-//     display: inline;
-//     margin-right: 10px;
-
-//     &:hover {
-//         cursor: pointer;
-//     }
-
-//     input:checked ~ label:before {
-//         background: red;
-//     }
-
-//      &:before {
-//             content: '';
-//             display: inline-block;
-//             width: 13px;
-//             height: 13px;
-//             border-radius: 50%;
-//             border: 1px solid #41D395;
-//             transition: 0.3s ease-in-out;
-//     }
-
-//     input:checked ~ label:before {
-//         background: #41D395;
-
-//         &:before {
-//             content: '';
-//             display: inline-block;
-//             width: 13px;
-//             height: 13px;
-//             border-radius: 50%;
-//             border: 1px solid #41D395;
-//             transition: 0.3s;
-//     }
-
-// }
-// }
 .radio-wrap {
 
     input {

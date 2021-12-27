@@ -36,9 +36,9 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 120,
     grabCursor: true,
     speed: 900,
-    autoplay: {
-        delay: 3000,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    // },
     
   
     // If we need pagination
@@ -60,6 +60,7 @@ const swiper = new Swiper('.swiper', {
 
   const url = "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=d613cc8e8f836175ed469d84c274770d";
   const weatherElement = document.getElementById('weather');
+  
 
   function getCurrentWeather() {
       const http = new XMLHttpRequest();
@@ -67,15 +68,16 @@ const swiper = new Swiper('.swiper', {
       http.addEventListener("load", function() {
           const response = JSON.parse(http.response);
           const temperature = response.main.temp;
-
-          console.log(temperature);
+          const city = response.name;
+          const country = response.sys.country;
+          let roundTemp = Math.round(temperature);
 
 
           if (temperature > 0) {
-              weatherElement.innerText = "+" + temperature;
+              weatherElement.innerText = "+" + roundTemp + "° " + city + ", " + country;
                       
             } else {
-                weatherElement.innerText = temperature;
+                weatherElement.innerText = "-" + roundTemp  + "° " + city + ", " + country;
             }
 
       })

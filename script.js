@@ -1,5 +1,6 @@
 "use strict";
 
+
 // About section - tab navigation
 
 const tabNavigationElements = document.querySelectorAll(".about .tab-navigation li");
@@ -92,4 +93,7 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   // Do something else, like open/close menu
 });
+
+
+
 

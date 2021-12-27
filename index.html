@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;300&display=swap"
         rel="stylesheet">
-    <link href="dist/hamburgers.css" rel="stylesheet">    
-
+    <link href="dist/hamburgers.css" rel="stylesheet">   
     <title>Finalinis atsiskaitymas</title>
 </head>
 
@@ -66,17 +65,17 @@
                     </div>
                     <div class="form-container">
                         <p>Your details</p>
-                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="First name" required>
                         <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
-                        <input type="text" placeholder="Last name">
+                        <input type="text" placeholder="Last name" required>
                         <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
-                        <input type="text" placeholder="Phone number">
+                        <input type="text" placeholder="Phone number" required>
                         <!-- <hr style="background-color: #D8D8D8; width: 260px;"> -->
                         <p>Type of subscription</p>
                         <div class="form-checkboxes">
                             <div class="radio-wrap">
                             <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-monthly">
+                                <input type="radio" name="subscription" id="subscription-monthly" required>
                                 <label for="subscription-monthly">Monthly</label>
                             </div>
                             <div class="radio-input-wrap">
@@ -86,7 +85,7 @@
                         </div>
                         </div>
                     </div>
-                    <button id="form-button">GET STARTED</button>
+                    <button id="form-button" type="submit">GET STARTED</button>
                 </form>
             </div>
         </section>
@@ -654,16 +653,16 @@
                 <div class="hero-container">
                 <form class="contact-form">
                     <div class="contact-form-container">
-                        <input type="text" placeholder="First name">
-                        <input type="text" placeholder="Last name">
-                        <input type="text" placeholder="Phone number">
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                        <input type="text" placeholder="Phone number" required>
                         <div class="contact-form-checkboxes">
                             <div class="contact-radio-wrap">
-                                <label class="radio-container">
-                                    <input type="radio" name="radios" class="input">
+                                <label class="contact-radio-container">
+                                    <input type="radio" name="radios" class="input" required>
                                     <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">PERSONAL</span>
                                 </label>
-                                <label class="contact-adio-container">
+                                <label class="contact-radio-container">
                                     <input type="radio" name="radios" class="input">
                                     <span style="font-weight: bold; font-size: 9px; margin-left: 5px;">COMPANY</span>
                                 </label>
@@ -671,7 +670,7 @@
                         </div>
                     </div>
                     <div class="contact-button">
-                    <button id="contact-form-button">SEND</button>
+                    <button id="contact-form-button" type="submit">SEND</button>
                 </div>
                 </form>
                 </div>

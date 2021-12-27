@@ -92,44 +92,33 @@
             display: flex;
             flex-wrap: wrap;
             display: contents;
-            
         }
 
         .about-images {
             width: 362px;
-            
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
             .top-images {
                 display: flex;
-                justify-content: space-between;
-            
-        
-            #about-img-1 {
+                justify-content: space-between;  
+                overflow-x: hidden;
                 
-                &:hover {
-                    cursor: pointer;
+                .top-images-1 {
+                    position: relative;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover::after {
+                        content: "Explore";
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 83px;
+                        left: 60px;                     
                 }
             }
-        
-            #about-img-2 {
-        
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        
-            #about-img-3 {
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-            #about-img-4 {
-                height: 168px;
-                width: 168px;
-            }    
-            } 
         }
     }
 }
 
-}

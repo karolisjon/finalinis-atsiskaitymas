@@ -36,9 +36,9 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 120,
     grabCursor: true,
     speed: 900,
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 3000,
+    },
     
   
     // If we need pagination
@@ -50,7 +50,7 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
 
         800: {
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 120
         }
       },

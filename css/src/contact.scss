@@ -13,6 +13,9 @@
             color: #FFFFFF;
             font-weight: bold;
             margin-bottom: 14px;
+            padding-right: 315px;
+
+
         }
 
         h2 {
@@ -189,7 +192,7 @@
         color: white;
         font-weight: bold;
         font-size: 18px;
-        transition: 0.3s linear;
+        transition: 0.3s ease-in-out;
         border: none;
 
         &:hover {
